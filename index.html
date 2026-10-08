@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HowToLiveBetter-CA — search the guide</title>
+<style>
+:root{--bg:#fafafa;--fg:#1a1a1a;--mut:#666;--acc:#0b5fff;--card:#fff;--line:#e3e3e3}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:0 1rem 4rem}
+header{max-width:60rem;margin:0 auto;padding:1.5rem 0 .5rem}
+h1{font-size:1.4rem;margin:.2rem 0}
+.sub{color:var(--mut);font-size:.9rem}
+#filters{max-width:60rem;margin:1rem auto;background:var(--card);border:1px solid var(--line);border-radius:.6rem;padding:.9rem;display:grid;grid-template-columns:2fr 1fr 1fr;gap:.6rem}
+#filters input,#filters select{font-size:.95rem;padding:.45rem .6rem;border:1px solid var(--line);border-radius:.4rem;width:100%;box-sizing:border-box}
+#count{max-width:60rem;margin:.8rem auto;color:var(--mut);font-size:.9rem}
+#results{max-width:60rem;margin:0 auto;display:flex;flex-direction:column;gap:.7rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:.6rem;padding:.8rem 1rem}
+.card h2{font-size:1.02rem;margin:0 0 .3rem}
+.meta{font-size:.8rem;color:var(--mut);margin-bottom:.4rem}
+.badge{display:inline-block;border-radius:.3rem;padding:.05rem .45rem;font-weight:700;font-size:.78rem;margin-right:.3rem}
+.gA{background:#d8f3dc}.gB{background:#fff3bf}.gC{background:#ffe5d9}
+.chip{display:inline-block;background:#eef2ff;border:1px solid #dbe4ff;border-radius:.3rem;padding:.05rem .4rem;font-size:.75rem;margin:.1rem .15rem .1rem 0;color:#333}
+.plain{font-size:.95rem;margin:.35rem 0}
+details{font-size:.88rem;margin-top:.4rem}
+details summary{cursor:pointer;color:var(--acc)}
+.field{margin:.35rem 0}
+.field b{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.03em;color:var(--mut)}
+a{color:var(--acc);word-break:break-all}
+.warn{color:#9a6700}
+</style>
+</head>
+<body>
+<header>
+<h1>HowToLiveBetter-CA — search the guide</h1>
+<div class="sub">545 evidence-graded items · data generated from the book markdown · amounts are dated, check the year</div>
+</header>
+<div id="filters">
+<input id="q" type="search" placeholder="Keyword — e.g. 911, TFSA, severance, helmet" autocomplete="off">
+<select id="fchapter"><option value="">All chapters</option><option value="1">1. Don&#x27;t Die Young</option><option value="2">2. Don&#x27;t Die Slowly</option><option value="3">3. Don&#x27;t waste your energy</option><option value="4">4. Don&#x27;t waste your time</option><option value="5">5. Don&#x27;t Waste Money</option><option value="6">6. The blacklist (seems smart, isn&#x27;t)</option><option value="7">7. When You&#x27;re Broke</option><option value="8">8. Don&#x27;t get entangled (trouble with others)</option><option value="9">9. Legal red lines ordinary people cross</option><option value="10">10. Dating and Marriage</option><option value="11">11. Red Lines for Tech Workers</option><option value="12">12. Starting a Small Business</option><option value="13">13. Emergencies: what to do first</option><option value="14">14. Accounts and Information Security</option><option value="15">15. Renting and Buying a Home</option><option value="16">16. Living with a chronic disease</option><option value="17">17. Elderly parents at home</option><option value="18">18. Having kids: is it worth it</option><option value="19">19. Jobs, dismissal, and work injuries</option><option value="20">20. Caring for a newborn</option><option value="21">21. Travelling Abroad and Staying Safe</option><option value="22">22. How to rest</option><option value="23">23. Skills worth learning</option><option value="24">24. Seeing a doctor</option><option value="25">25. When Someone Dies</option><option value="26">26. Running a website or platform</option><option value="27">27. Pregnancy and childbirth</option><option value="28">28. Don&#x27;t wreck your health for looks</option><option value="29">29. After a hard blow</option><option value="30">30. School-age children</option><option value="31">31. Paths after 18</option><option value="32">32. Studying in Canada</option><option value="33">33. Living with a disability</option><option value="34">34. The home medicine cabinet: don&#x27;t poison yourself</option></select>
+<select id="fgrade"><option value="">Grade: all</option><option>A</option><option>B</option><option>C</option></select>
+<select id="fdim"><option value="">Benefit: all areas</option><option value="death">staying alive</option><option value="money">money</option><option value="time">time</option><option value="freedom">freedom / legal</option></select>
+<select id="fbenefit"><option value="">Payoff: all</option><option value="high">high</option><option value="mid">mid</option><option value="low">low</option></select>
+<select id="fmoney"><option value="">Cost: any money</option><option value="0">free</option><option value="low">tens of $</option><option value="high">tens of thousands</option></select>
+</div>
+<div id="count"></div>
+<div id="results"></div>
+<script>window.__GUIDE_CHUNKS__ = [];</script>
+<script src="data/d01.js"></script>
+<script src="data/d02.js"></script>
+<script src="data/d03.js"></script>
+<script src="data/d04.js"></script>
+<script src="data/d05.js"></script>
+<script src="data/d06.js"></script>
+<script src="data/d07.js"></script>
+<script src="data/d08.js"></script>
+<script src="data/d09.js"></script>
+<script src="data/d10.js"></script>
+<script id="guide-data" type="application/json">
+[]
+</script>
+<script>
+const ITEMS = window.__GUIDE_CHUNKS__.flat();
+const $ = id => document.getElementById(id);
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function linkify(s){
+  return esc(s).replace(/(https?:\/\/[^\s<>"')\]]+)/g,'<a href="$1" target="_blank" rel="noopener">$1</a>');
+}
+function render(){
+  const q = $('q').value.trim().toLowerCase();
+  const ch = $('fchapter').value, gr = $('fgrade').value, dm = $('fdim').value,
+        bn = $('fbenefit').value, mo = $('fmoney').value;
+  const hit = ITEMS.filter(it => {
+    if (ch && String(it.chapter_num) !== ch) return false;
+    if (gr && it.grade !== gr) return false;
+    if (dm && it.dimension !== dm) return false;
+    if (bn && it.benefit !== bn) return false;
+    if (mo && it.money !== mo) return false;
+    if (q) {
+      const hay = (it.title+' '+it.chapter_title+' '+it.plain+' '+it.cost+' '+it.benefit_text+' '+it.notes+' '+it.sources).toLowerCase();
+      if (!q.split(/\s+/).every(w => hay.includes(w))) return false;
+    }
+    return true;
+  });
+  $('count').textContent = hit.length + ' of ' + ITEMS.length + ' items';
+  $('results').innerHTML = hit.slice(0, 400).map(it => `
+    <div class="card">
+      <h2>${esc(it.title)}</h2>
+      <div class="meta"><span class="badge g${it.grade}">${it.grade}${it.disputed ? ' · disputed' : ''}</span>
+      ch.${it.chapter_num} ${esc(it.chapter_title)} · #${it.number}${it.sources.includes('UNVERIFIED') ? ' <span class="warn">⚠ UNVERIFIED</span>' : ''}</div>
+      <div><span class="chip">money: ${it.money}</span><span class="chip">time: ${it.time}</span><span class="chip">willpower: ${it.willpower}</span><span class="chip">payoff: ${it.benefit}</span><span class="chip">area: ${it.dimension}</span></div>
+      <div class="plain">${esc(it.plain)}</div>
+      <details><summary>Cost · Benefit · Evidence · Sources · Notes</summary>
+        <div class="field"><b>Cost</b>${esc(it.cost)}</div>
+        <div class="field"><b>Benefit</b>${esc(it.benefit_text)}</div>
+        <div class="field"><b>Evidence</b>${esc(it.evidence)}</div>
+        <div class="field"><b>Sources</b>${linkify(it.sources)}</div>
+        ${it.notes ? `<div class="field"><b>Notes</b>${linkify(it.notes)}</div>` : ''}
+      </details>
+    </div>`).join('') + (hit.length > 400 ? `<div class="meta">…showing first 400, refine the filters</div>` : '');
+}
+['q','fchapter','fgrade','fdim','fbenefit','fmoney'].forEach(id => $(id).addEventListener('input', render));
+render();
+</script>
+</body>
+</html>
