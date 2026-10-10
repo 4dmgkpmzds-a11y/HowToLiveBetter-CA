@@ -83,14 +83,14 @@ This chapter is about not dying young: crashes, fires, infections, and the medic
 - Sources: WHO (2025). Road traffic injuries fact sheet. <https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries>
 - Notes: **Ontario law:** Impaired driving is a Criminal Code offence; provincial penalties start below the criminal threshold. Speeding and stunt driving carry fines, demerit points, and possible licence suspension and vehicle impoundment. Graded B because the speed figures are modelled, and WHO gives direction rather than numbers for alcohol.
 
-### 10. Put children under 4 in car seats — never hold them on your lap
+### 10. Car seats are sized by weight and height, not age — never hold a child on your lap
 <!-- costs: money=high time=low willpower=no benefit=high dimension=death -->
 - Cost: $100–$400 per seat, usable for years. One extra minute to strap the child in.
-- In plain words: Car seats cut fatal-injury risk about 71% for infants under 1 and 54% for ages 1–4. Holding a child on your lap does nothing — you cannot hold on in a crash.
+- In plain words: Car seats cut fatal-injury risk about 71% for infants under 1 and 54% for ages 1–4. But the legal cutoff isn't age — it's the child's weight and height (exact brackets in Notes below). A heavy preschooler may already need a booster; a light older child may still need the forward-facing seat. Holding a child on your lap does nothing — you cannot hold on in a crash.
 - Benefit: NHTSA estimates: car seats cut fatal-injury risk 71% for infants under 1 and 54% for children 1–4 in cars. WHO's figure for infants: 71%.
 - Evidence: A
-- Sources: NHTSA (2024). Occupant Protection in Passenger Vehicles: 2022 Data (DOT HS 813 573). <https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813573>; WHO (2025). Road traffic injuries fact sheet. <https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries>
-- Notes: **Ontario law:** HTA s.106 and Reg. 613 — rear-facing until 9 kg, forward-facing from 9–18 kg, booster until the child is 8 years old, 36 kg, or 145 cm tall (whichever comes first); drivers are responsible for passengers under 16. <https://settlement.org/ontario/daily-life/transportation/cars/do-i-need-to-use-a-car-seat-for-my-child/> Install exactly per the manual — a misinstalled seat is barely a seat. Under-1s ride rear-facing.
+- Sources: NHTSA (2024). Occupant Protection in Passenger Vehicles: 2022 Data (DOT HS 813 573). <https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813573>; WHO (2025). Road traffic injuries fact sheet. <https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries>; SickKids (aboutkidshealth.ca) — Ontario car-seat rules by weight and the five-step seatbelt test. <https://www.aboutkidshealth.ca/iu/healthaz/na/car-seat-safety-for-infants-and-children/>
+- Notes: **Ontario:** HTA s.106 and O. Reg. 613 — rear-facing under 9 kg, forward-facing 9–18 kg, booster 18–36 kg until the child is 8 years old or 145 cm tall (whichever comes first); drivers are responsible for passengers under 16. **Quebec:** Highway Safety Code art. 397 — restraint adapted to the child's weight and size until 145 cm tall or 9 years old (the old 63 cm seated-height cutoff was replaced on 2019-04-18). Before dropping the booster entirely, do the five-step seatbelt test: back flat against the vehicle seat, knees bending at the seat edge, shoulder belt centred on the collarbone, lap belt low on the thighs, and the child stays put for the whole ride. Install exactly per the manual — a misinstalled seat is barely a seat. Under-1s ride rear-facing.
 
 ### 11. If you have small children, fit window limiters — screens don't count
 <!-- costs: money=low time=low willpower=no benefit=high dimension=death -->
